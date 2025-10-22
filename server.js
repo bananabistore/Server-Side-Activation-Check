@@ -23,7 +23,7 @@ const buatHashSha256 = (teks) => {
     return crypto.createHash('sha256').update(teks).digest('hex');
 };
 
-function inisialisasiServer() {
+async function inisialisasiServer() {
     try {
         MASTER_KEY_SERVER = await kv.get(MASTER_KEY_KEY);
         if (MASTER_KEY_SERVER) {
