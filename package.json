@@ -4,19 +4,10 @@
   "description": "Mini-apps server-side untuk validasi token bot.",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js"
   },
-  "keywords": [
-    "telegram",
-    "bot",
-    "validation",
-    "server",
-    "express"
-  ],
-  "author": "Dammah Sifla",
-  "license": "ISC",
   "dependencies": {
+    "@vercel/kv": "^2.0.0",  
     "chalk": "^4.1.2",
     "ejs": "^3.1.10",
     "express": "^4.19.2"
